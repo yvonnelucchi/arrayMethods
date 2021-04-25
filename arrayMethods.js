@@ -15,14 +15,26 @@ const inventors = [
   { first: 'Thomas', last: 'Edison', year: 1847, passed: 1931 }
 ];
 
-// 1. Filter de lijst op uitvinders die geboren zijn in de 16e eeuw
+// 1. Filter de lijst op uitvinders die geboren zijn in de 16e eeuw (1501 - 1600)
 // Verwachte uitkomst:
 // [{ first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 }, { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }]
-
-
+const century = inventors.filter((inventor) => {
+  if (inventor.year <= '1600') {
+  return true;
+  }
+  return false
+});
+console.log(century);
 
 // 2. Maak een array met daarin alle geboortejaren van de uitvinders
 // Verwachte uitkomst: [1879, 1643, 1564, 1867, 1571, 1473, 1858, 1898, 1815, 1855, 1878, 1847];
+
+// const birthyear = inventors.map((inventor) => {
+//   return 'birthyear: ' + inventors.year;
+// });
+//
+// console.log(birthyear);
+//
 
 
 
